@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            min-height: 100vh;
+        }
+        .container{
+            display: flex;
+            width: 1100;
+            justify-content: space-between;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+        }
+        .container img{
+            max-width: 350px;
+            transform-origin: center;
+            transform: perspective(800px) rotateY(20deg);
+            transition: 0.5s;
+            box-shadow: 0px 0px 8px grey;
+            border-radius: 5px;
+        }
+        .container:hover img{
+            opacity: 0.3;
+        }
+        .container img:hover {
+            transform: perspective(800px) rotateY(0deg);
+            opacity: 1;
+        }
+    </style>
+ <script>
+    document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+}
+  </script>
+  </head>
+  <body>
+    <div class="container">
+        <img src="./assets/il_fullxfull.2947254491_3h0z.webp" alt="1">
+        <img src="./assets/il_fullxfull.4341390936_pe43.webp" alt="2">
+        <img src="./assets/81M1evI0qJL._UX679_.jpg" alt="3">
+    </div>
+    
+</body>
+</html>

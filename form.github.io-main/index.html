@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+</head>
+<body oncontextmenu="return false;" data-new-gr-c-s-check-loaded="14.1049.0" data-gr-ext-installed="">
+
+    <div id="container">
+        <div id="formlabel">Personal details</div>
+
+        <form action="details" method="get">
+
+            <label for="salutation">Salutation<br>
+                <select name="salutation">
+                    <option>--None--</option>
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                </select>
+            </label><br>
+
+            <label for="name"><br>
+                First Name: <input type="text" name="firstName" placeholder="abcd"><br><br>
+                Last Name: <input type="text" name="lastName" placeholder="abcd">
+            </label><br>
+
+            <label for="gender"><br>
+                Gender:
+                <input type="radio" name="gender" value="male"> Male 
+                <input type="radio" name="gender" value="female"> Female 
+            </label><br>
+            
+            <label for="email"><br>
+                Email: <input type="email" name="email" value="abc@gmail.com">
+            </label><br>
+
+            <label for="Dob"><br>
+                Date of birth: <input type="date" name="dob">
+            </label><br>
+
+            <label for="address"><br>
+                Address:<br>
+                <textarea name="address" cols="30" rows="5" spellcheck="false" data-ms-editor="true"></textarea>
+            </label><br>
+
+            <label for="submit"><br>
+                <input type="submit" value="Submit">
+            </label>
+            
+        </form>
+    </div>
+
+</body>
+</html>

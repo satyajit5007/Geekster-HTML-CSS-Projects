@@ -1,0 +1,213 @@
+:root {
+    --page-background-color:#141e28;
+    --text-color:linen;
+    --blockquote-color:#00beef;
+    
+  }
+  
+  *, ::before, ::after{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+  }
+  
+  html{
+    font-size:16px;
+  }
+  
+  h1{
+    font-family: 'Anton', sans-serif;
+    color:orangered;
+    font-size: 5rem;
+  }
+  p{
+    font-family: 'Baskervville', serif;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+  }
+  a{
+    color:white;
+    text-decoration: none;
+  }
+  a, blockquote p, h2, h3{
+    font-family: 'Raleway', sans-serif; 
+  }
+  blockquote{
+    color:var(--blockquote-color);
+    padding: 1rem;
+    text-align: center;
+  }
+  blockquote p{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    position: relative;
+  }
+  blockquote p::before{
+    content:'"';
+    position: relative;
+    left:-.4rem;
+  }
+  
+  blockquote p::after{
+    content:'"';
+    position:relative;
+    right: -.4rem;;
+  }
+  
+  blockquote hr{
+    border: 1px solid rgb(120 120 120 / 60%);
+    /* margin:2rem 0; */
+  }
+  
+  body{
+    background-color: var(--page-background-color);
+    color:var(--text-color);
+  
+  }
+  
+  body div.wrapperPage{
+    max-width: 60rem;
+    margin:auto;
+    /* background-color: lightblue; */
+    margin-bottom: 2rem;
+  
+  }
+  
+  
+  #primaryHeader{
+    text-align: center;
+    /* background-color: lightblue; */     
+  }
+  .wrapperAuthorInfoAndSocialIcons div> p >  a:hover{
+    background-color: rgb(115, 203, 162);
+  }
+  #primaryHeader .wrapperAuthorInfoAndSocialIcons div p:nth-child(2){
+    color:rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway', sans-serif; 
+  }
+  #primaryHeader .wrapperAuthorInfoAndSocialIcons{
+    text-align: left;
+    padding:1rem 0;
+    padding-bottom:2rem;
+  }
+  
+  main{
+    
+   
+    
+    /* background-color: rgb(4, 32, 10) */
+  }
+  main #mainContentSection{  
+    
+    column-width: 15rem;
+    text-align: justify;
+    
+  }
+  
+  
+  main #mainContentSection p:first-child::first-letter{
+    font-size: 4rem;
+    color:orangered;
+    float: left;
+  }
+  
+  div.wrapperSection1and2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  
+  #primaryHeader div>img{
+    max-width: 100%;
+    /* object-fit: cover; */
+    /* width: inherit; */
+  }
+  
+  div.wrapperPageHeading p{
+    color:orangered;
+    font-size: 1.3rem;
+  }
+  div.wrapperAuthorInfoAndSocialIcons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  ul.socialIcons{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  ul.socialIcons li a{
+    font-size: 2rem;
+  }
+  #section-1{
+    text-align: justify;
+  }
+  #section-1 dl dd{
+    font-size:1.2rem;
+    color:var(--text-color);
+    line-height: 1.5rem;
+  }
+  #section-1 dl dt{
+    color:var(--blockquote-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+  }
+  #section-1 div>h2{
+    color:var(--blockquote-color);
+  }
+  
+  #section-2 div>img{
+    max-width: 100%;
+    
+  }
+  #section-2 {
+    display: grid;
+    gap:1.5rem;
+    place-items: center;
+  }
+  #section-2 .wrapperCalcImgAndQuote{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+  }
+  
+  
+  /* Media Queries */
+  @media screen and (max-width:1012px){
+    body div.wrapperPage{
+      max-width: 50rem;
+    }
+  }
+  
+  @media screen and (max-width:845px){
+    body div.wrapperPage{
+      max-width: 40rem;
+    }
+    #section-2 .wrapperCalcImgAndQuote{
+      grid-template-columns: 1fr;
+      
+    }
+    
+    div.wrapperSection1and2{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width:690px){
+    main #mainContentSection{
+      column-width:auto;
+    }
+    div.wrapperSection1and2 {
+      grid-template-columns: 1fr;
+    }
+    body div.wrapperPage{
+      width: 80%;
+    }
+  }

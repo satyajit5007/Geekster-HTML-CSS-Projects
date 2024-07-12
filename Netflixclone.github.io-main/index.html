@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Netflix | India</title>
+   
+ 
+    <style>
+      body {
+        margin: 0;
+        background: url("https://assets.nflxext.com/ffe/siteui/vlv3/c38a2d52-138e-48a3-ab68-36787ece46b3/eeb03fc9-99c6-438e-824d-32917ce55783/IN-en-20240101-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+      }
+      #heading {
+        height: 20%;
+        display: flex;
+      }
+
+      h1 {
+        font-size: 55px;
+        margin: 0;
+      }
+
+      #shadow {
+        background: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+      }
+
+      #image {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+      }
+      #buttons {
+        padding: 30px;
+        width: 60%;
+        text-align: right;
+      }
+
+      #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 80%;
+      }
+      #signin {
+     
+        background: red;
+        padding: 8px 14px;
+        border: none;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      p {
+        margin: 13px;
+        font-weight: 400;
+      }
+      #p1 {
+        font-size: 28px;
+      }
+      #p2 {
+        font-size: 23px;
+      }
+    </style>
+  <script>
+    document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+}
+  </script>
+</head>
+<body oncontextmenu="return false;">
+    <div id="shadow">
+      <div id="heading">
+        <div id="image">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+            width="150"
+            height="50"
+          />
+        </div>
+        <div id="buttons">
+          <button id="signin">Sign In</button>&nbsp;&nbsp;&nbsp;
+          <button id="signin">Register</button>
+        </div>
+      </div>
+
+      <div id="main">
+        <h1>Unlimited movies, TV shows and more.</h1>
+        <p id="p1">Watch anywhere. Cancel anytime.</p>
+        <p id="p2">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
